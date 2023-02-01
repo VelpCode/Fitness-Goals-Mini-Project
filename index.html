@@ -1,23 +1,31 @@
 <!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness Goals</title>
-    <link rel = "stylesheet" href = "styles.css">
-    <link rel = "stylesheet" href = "https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
-    <div class = "wrapper">
-        <img src = "bars-icon.svg" alt = "icon"
-        <input type = "text" placeholder = "Add a new task">
-        <div class = "inside-stuff">This is an example</div>
-        <div class = "inside-stuff2">This is another example</div>
+<div class = "container">
+  <div class="wrapper">
+    <img class = "ammu" src = "banner2.png">
+    <header>Daily Fitness Checklist 💪</header>
+    <div class="inputField">
+      <input type="text" placeholder="Add your new goal!">
+      <button><i class="fas fa-plus"></i></button>
     </div>
-
-    
-
-    <script src = "script.js"></script>
+    <ul class="todoList">
+      <!-- data are comes from local storage -->
+    </ul>
+    <div class="footer">
+      <span>You have <span class="pendingTasks"></span> pending goals</span>
+      <button>Clear All</button>
+    </div>
+  </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
